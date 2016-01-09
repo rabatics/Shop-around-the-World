@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="commonpage.master.cs" Inherits="webmaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <link rel="stylesheet" type="text/css" href="./CSS-Styles/Homepage.css" />
+        <link href="./CSS-Styles/StyleSheet.css" rel="Stylesheet" />
+        <script type="text/javascript">
+            $(document).ready(function () 
+            {
+                $(window).bind('scroll', function () 
+                {
+                    var navHeight = $(window).height() - 70;
+                    if ($(window).scrollTop() > navHeight) 
+                    {
+                        $('nav').addClass('fixed');
+                    }
+                    else 
+                    {
+                        $('nav').removeClass('fixed');
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body class="headerDiv">
+        <form id="form1" runat="server"> 
+            <div style="background-color:White;">
+                <div class="topBar">
+                    <table width="100%" colspan="5" style="background-color:#CC3300;">
+                        <tr>
+                            <td width="85%" style="text-align:right;">
+                                <ul>
+                                    <% if (Session["user"] == null) { %>
+                                    <li style="text-decoration:none;display: inline;"><a href="loginpage.aspx" style="text-decoration:none;color:#0099FF;font-size:large;color:#fff;">Login |</a></li>
+                                    <% } else { %>
+                                    <li style="text-decoration:none;display: inline;">Welcome&nbsp;<u><%= Session["user"].ToString() %></u>&nbsp; |</li>
+                                    <%} %>
+                                    <% if (Session["user"] == null) { %>
+                                    <li style="text-decoration:none;display: inline;"><a href="RegistrationPage.aspx" style="text-decoration:none;color:#0099FF;font-size:large;color:#fff;">Register</a></li>
+                                    <% } else { %>
+                                    <li style="text-decoration:none;display: inline;"><asp:LinkButton onclick="Log_Out" style="text-decoration:none;color:#0099FF;font-size:large;color:#fff;" runat="server">Logout</asp:LinkButton></li>
+                                    <%} %>
+                                </ul>
+                            </td>
+                            <td width="15%" align="right">
+                                Follow Us on :
+                                <a href="http://www.facebook.com/"><img class="changeHoverEffect"  src="./Homepage_images/facebook.png" width="25" height="25" align="center"  
+                                style="vertical-align:middle;margin-right:5px;margin-top:0px;" alt="pic"  alt="pic"/>
+                                </a>
+                                <a href="https://twitter.com/">
+                                    <img class="changeHoverEffect" src="./Homepage_images/twitter.png" width="25" height="25" align="center" 
+	                                    style="vertical-align:middle;margin-right:5px;margin-top:0px;" alt="pic" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table width="100%" class="headerDivp">
+                    <tr>
+                        <td width="30%">
+                            <div class="logo">
+                               <a href="Shop.aspx"><img src="./Homepage_images/shoparound3.png" alt="logo" width="400" height="130"/></a>
+                            </div>
+                        </td>
+                        <td width="70%">
+                            <table cellspacing="30">
+                                <tr>
+                                    <td>
+                                        <a class="menutext" id="home" runat="server" style="text-decoration:none;" href="./Shop.aspx">Home </a>
+                                    </td>
+                                    <td>
+                                        <a class="menutext" id="browse" runat="server" style="text-decoration:none;" href="BrowseProduct.aspx">Browse Products </a>
+                                    </td>
+                                    <td>
+                                        <a class="menutext" id="vendors" runat="server" style="text-decoration:none;" href="Vendors.aspx">Our Vendors </a>
+                                    </td>
+                                    <td>
+                                        <a class="menutext" id="about" runat="server" style="text-decoration:none;" href="./Aboutus_page.aspx">About Us </a>
+                                    </td>
+                                    <td>
+                                        <% if (Session["user"] == null)
+                                        { %><a class="menutext" style="text-decoration:none;" href="loginpage.aspx">My Account </a>
+                                        <%}
+                                        else
+                                        { %>
+                                        <a class="menutext" id="account" runat="server" style="text-decoration:none;" href="MyAccount.aspx">My Account</a><%} %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <br />
+               
+            </div>  
+        </form>
+    </body>
+</html>

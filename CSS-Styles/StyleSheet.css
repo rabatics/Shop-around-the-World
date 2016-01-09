@@ -1,0 +1,216 @@
+﻿ul.menu1
+	{
+    margin: auto 28% auto auto;
+    overflow: hidden;
+    list-style: outside none none;
+    padding: 1%; 
+    font: inherit;
+    vertical-align: baseline;
+    width: 47%;
+    text-align: center;
+    margin-left:26.5%;
+}
+.list1>a
+{
+    text-align:center;
+    width:100%;
+    height: 130px;
+    display:block;
+    color:#CC3300;
+    text-decoration:none;
+}
+.list1>a:hover
+{
+    text-decoration: underline;
+}
+
+li.list1
+{
+    display: block;
+    float: left;
+    margin-left: 5%;
+    color: #CC3300;
+    text-align:center;
+    width:25%;
+}
+
+a.content
+{
+    position: relative;
+    height: 158px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #CC3300;
+}
+
+.imglist
+{    
+    display: block;
+    bottom: 0px;
+    background-clip: padding-box;
+    vertical-align: middle;
+    margin-left: 4%;
+    height:60%;
+    width:90%;
+}
+
+.label1
+{
+    
+    text-align: center;
+    font-size: x-large;
+    color: #CC3300;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 18%;
+    top: 18%;
+    right: auto;
+    bottom: 0%;
+    left: auto;
+}
+
+.panel-container
+{
+    padding: 1% 2% 2% 1%;
+    border: 1px solid #000000;
+    left: auto;
+    right:auto;
+    margin:auto;
+    width: 50%;
+    height: 40%;
+    overflow: hidden;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #CC3300;
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+.panel1
+{
+    border-bottom-style: double;
+    border-bottom-width: 1px;
+    border-bottom-color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    margin: 0%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom:1%;
+}
+.panel2
+{
+    background-color:#ffffff;
+    color:Red;
+    border-bottom-style: double;
+    border-bottom-width: 1px;
+    border-bottom-color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    margin: 0%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.panel-heading
+{
+    border-style: none;
+    border-color: #0000FF;
+    list-style-type: none;
+    
+}
+
+.heading
+{
+    font-weight:bold;
+}
+
+.panel-body
+{
+    display: block;
+    padding: 2%;
+    list-style-type: none;
+    display: none;
+}
+
+a.content:link, a.content:visit, a.content:active
+{
+    color: #CC3300;
+}
+
+.content
+{
+    margin-top: 50%;
+    top: 50%;
+    position: relative;
+}
+
+#ContentPlaceHolder1_vendortable
+{
+    margin-top: 2%;
+    top: 2%;
+    bottom:0%;
+    margin-left:40%;
+    border-style: solid;
+    border-width: thin;
+    border-color:#CC3300;
+    width:60%;
+    background-color:#FFFFFF;
+    color:#CC3300;
+    padding:1%;
+    height:0;
+    border-collapse:collapse;
+ }
+ #ContentPlaceHolder1_vendorrow
+ {
+        border:thin solid #CC3300;
+            
+        }
+        #ContentPlaceHolder1_vendorcell
+        {
+            border:thin solid #CC3300;
+            text-align:left;
+            padding:1%;
+            margin:0;
+            font-size:1em;
+            line-height:1em;
+            width:50%;
+	        height:25px;
+	        vertical-align:middle;
+        }
+        
+        #vendorname
+        {
+            font-size:x-large;
+            font-family: Gabriola;
+            font-weight:bold;
+        }
+.rating_bar {
+    /*this class creats 5 stars bar with empty stars */
+    /*each star is 16 px, it means 5 stars will make 80px together */
+    width: 80px;
+    /*height of empty star*/
+    height: 16px;
+    /*background image with stars */
+    background: url(../Vendorspage_images/emptystar.png);
+    /*which will be repeated horizontally */
+    background-repeat: repeat-x;
+    /* as we are using sprite image, we need to position it to use right star, 
+    //0 0 is for empty */
+    background-position: 0 0;
+    /* align inner div to the left */
+    text-align: left;
+}
+.rating {
+    /* height of full star is the same, we won't specify width here */
+    height: 16px;
+    /* background image with stars */
+    background: url(../Vendorspage_images/fullstar.jpg);
+    /* now we will position background image to use 16px from top, 
+    //which means use full stars */
+    background-position: 0 0;
+    /* and repeat them horizontally */
+    background-repeat: repeat-x;
+}

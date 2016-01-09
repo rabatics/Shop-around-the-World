@@ -1,0 +1,26 @@
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	position:absolute;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin: 20px;
+}

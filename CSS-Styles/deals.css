@@ -1,0 +1,24 @@
+.container {
+position:relative; overflow:hidden; width:200px; height:150px;
+}
+.container .textbox {
+position:absolute; top:0px; left:10px; width:200px; height:150px; margin-left:-210px;
+}
+
+.container:hover .textbox {
+margin-left:0;
+}
+.container img {
+margin-left:0;
+}
+.container:hover img {
+margin-left:210px;
+}
+.text {
+text-align:center;
+font-size:medium;font-weight:600;margin:auto;
+
+}
+.container img, .textbox {
+-webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+}

@@ -1,0 +1,105 @@
+.map
+	{
+		margin: 25% 10% 20% 10%;
+		top: 25%;
+		left: 20%;
+		clip: rect(25%, 10%, 20%, 10%);
+		right: 20%;
+		bottom: 20%;
+	}
+   .map-title
+	{
+		font-family: "Courier New", Courier, monospace;
+		font-size: large;
+		color: #800000;
+		background-color: #FFFFFF;
+		top: 23%;
+		right: 10%;
+		bottom: 10%;
+		left: 20%;
+		font-weight: bolder;
+	}
+		   .curve
+   {
+	   border: 1px solid #a1a1a1;
+	background: #dddddd;
+	border-radius: 25px;
+
+   }
+   
+   .newrelase-table
+		  {
+	   margin-top:0px;
+	   padding-top:0px;
+
+	   
+   }
+   .DisplayPage-table
+   {
+   font-family: Gabriola;
+		font-size: x-large;
+		font-variant: normal;
+		font-style: normal;
+		font-weight: 600;
+		color:Silver;
+   }
+   .deals-table 
+   {
+	   background-color: #539CE6;
+	   opacity:0.9;
+
+	border-radius:25px;
+	box-shadow: 0 10px 6px -6px #777; 
+   }
+   .ApplyFont
+   {
+	  font-family: Gabriola;
+		font-size: medium;
+		font-variant: normal;
+		font-style: normal;
+		font-weight: 600;
+   }
+
+.team-desc
+{
+    font-family: Gabriola;
+		font-size: x-large;
+		font-variant: normal;
+		font-style: normal;
+		font-weight: 400;
+		border-radius:25px;
+		background-color:#CC3300;
+		color:#FFFFFF;
+		box-shadow: 0 10px 6px -6px #777; 
+
+}
+.about-content
+{
+    border-spacing: 50px 0px;
+}
+
+.emailphone-block
+{
+background-color: #CC3300;
+border-radius:25px;
+font-size:xx-large; font-weight:200;color:#FFFFFF;
+padding:0;
+}
+.contact-content
+{
+    
+    border-radius:25px;
+    background-color:#FFFFFF ;
+    color:#CC3300;
+    box-shadow: 0 10px 6px -6px #CC3300;
+    border:thin solid #CC3300;
+    font-size:x-large;
+}
+
+.address-block
+{
+   
+background-color: #CC3300;
+border-radius:25px;
+font-size:xx-large; font-weight:200;color:#FFFFFF;
+}

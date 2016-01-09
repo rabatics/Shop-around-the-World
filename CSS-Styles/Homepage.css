@@ -1,0 +1,145 @@
+ body
+ {
+     margin:0%;
+     padding:0%;
+     height:100%;
+ }
+ .topBar
+        {
+            padding: 0%;
+            margin: 0%;
+            background-color: #CC3300;
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            z-index: 1;
+            height: 20px;
+            color: #FFFFFF;
+            font-family: Gabriola;
+            font-size: large;
+            font-variant: normal;
+            font-style: normal;
+            font-weight: 600;
+            bottom: 2%;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        .headerDivp
+        {
+            
+            border-style: none;
+            border-bottom:3px solid #CC3300;
+            border-color: #CC3300;
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            top: 11%;
+            z-index: 1;
+            left:0%;
+            clip: rect(11%, 0, 15%, 0);
+            color: white;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+     
+        .footer
+        {
+            border: thin solid #000000;
+            bottom: 0%;
+            margin-bottom:0%;
+            width: 100%;
+            background-color: #CC3300;
+            margin:0%;
+            padding:0%;
+            right:0%;
+            left:0%;
+            height:60px;
+            position:relative;
+            vertical-align:middle;
+            font-family: Gabriola;
+            font-size: large;
+            font-variant: normal;
+            font-style: normal;
+            font-weight: 600;
+        }
+        .loginLinks
+        {
+            float: none;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: inline;
+            position: fixed;
+            text-align: center;
+            list-style-type: none;
+        }
+      
+        .singup
+        {
+            font-family: "Times New Roman", Times, serif;
+            color: #0099FF;
+            float: left;
+            clip: rect(18%, auto, auto, 3%);
+            position: fixed;
+            top: 18%;
+            left: 3%;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .footerLinks
+        {
+            color: #FFFFFF;
+            text-align: center;
+            margin: auto;
+            clear: both;
+        }
+        .logo
+        {
+            float:left;
+            margin-left:4%;
+            left:4%;
+            
+        }
+     
+.menutext:hover 
+{
+    color: #FFFFFF;
+	background-color: #CC3300;
+	border-radius:15px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:4px;
+	
+
+
+} 
+.menutext 
+{
+      font-family: Gabriola;
+            font-size: xx-large;
+            font-variant: normal;
+            font-style: normal;
+            font-weight: 600;
+            color:#CC3300;
+            padding:2px;
+ }
+ .active
+{
+            font-family: Gabriola;
+            font-size: xx-large;
+            font-variant: normal;
+            font-style: normal;
+            font-weight: 600;
+            color:#CC3300;
+	border: thin solid #CC3300;
+	border-radius:15px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:4px;
+ }
+
+.changeHoverEffect:hover {
+border-radius:50%; box-shadow: 0 10px 6px -6px grey;
+}
+ .changeHovereffect {
+-webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+}
